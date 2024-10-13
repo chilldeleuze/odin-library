@@ -7,6 +7,7 @@ body {
     --slate-100: #f1f5f9;
     --slate-400: #94a3b8;
     --slate-950: #020617;
+    --green-400: #4ade80;
 }
 
 body {
@@ -42,6 +43,23 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+}
+
+.library__footer {
+    padding-top: 8px;
+    display: flex;
+    justify-content: end;
+}
+
+.addBook {
+    border-radius: 100%;
+    border-style: none;
+    background-color: var(--green-400);
+    padding: 10px;
+    color: white;
+    width: 32px;
+    height: 32px;
+    line-height: 0%;
 }
 
 .book {

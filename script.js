@@ -60,3 +60,16 @@ function renderLibrary(library) {
 
 
 renderLibrary(myLibrary)
+
+
+const addBookDialog = document.querySelector("dialog");
+const addBookButton = document.querySelector("button.addBook");
+const closeButton = document.querySelector("button.closeDialog")
+
+addBookButton.addEventListener("click", () => {
+    addBookDialog.showModal();
+})
+
+closeButton.addEventListener("click", () => {
+    addBookDialog.close();
+})
