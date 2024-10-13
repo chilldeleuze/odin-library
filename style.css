@@ -1,0 +1,27 @@
+html,
+body {
+    margin: 0
+}
+
+:root {
+    --slate-400: #94a3b8;
+    --slate-950: #020617;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--slate-950);
+}
+
+main {
+    flex-grow: 1;
+    margin: auto;
+}
+
+footer {
+
+}
