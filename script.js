@@ -24,3 +24,39 @@ addBookToLibrary(Circe);
 
 console.log(myLibrary)
 
+
+// Constants for DOM
+
+const library = document.querySelector("div.library__content")
+
+function renderBook(book) {
+    const newBook = document.createElement("div");
+    newBook.classList.add("book");
+    
+    const title = document.createElement("h2");
+    title.textContent = book["title"];
+    
+    const by = document.createElement("p");
+    by.textContent = "by";
+
+    const author = document.createElement("p");
+    author.textContent = book["author"];
+
+    newBook.appendChild(title);
+    newBook.appendChild(by);
+    newBook.appendChild(author);
+
+    library.appendChild(newBook)
+}
+
+function renderLibrary(library) {
+    for (let i = 0; i < library.length; i++) {
+        renderBook(library[i])
+    }
+}
+
+// add single book to rendered library
+// renderBook(Circe)
+
+
+renderLibrary(myLibrary)

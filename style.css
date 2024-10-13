@@ -4,6 +4,7 @@ body {
 }
 
 :root {
+    --slate-100: #f1f5f9;
     --slate-400: #94a3b8;
     --slate-950: #020617;
 }
@@ -20,8 +21,35 @@ body {
 main {
     flex-grow: 1;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
 
+}
+
+.library {
+    background-color: var(--slate-400);
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.library__content {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--slate-100);
+    padding: 16px;
+    border-radius: 8px;
 }
