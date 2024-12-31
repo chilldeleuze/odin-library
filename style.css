@@ -71,3 +71,23 @@ footer {
     padding: 16px;
     border-radius: 8px;
 }
+
+dialog:not([open]) {
+    display: none; /* Hide the dialog when it's not open */
+}
+
+dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    border: 1px solid ;
+    border-radius: 4px;
+}

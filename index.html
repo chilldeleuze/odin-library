@@ -19,7 +19,18 @@
     </main>
 
     <dialog>
-        <p>Lorem Ipsum</p>
+        <form id="newbook">
+            <div class="form-row">
+                <label for="book_title">Titel</label>
+                <input type="text" name="book_title" id="book_title">
+            </div>
+            <div class="form-row">
+                <label for="book_author">Author</label>
+                <input type="text" name="book_author" id="book_author">
+            </div>
+            <button type="submit">Add Book</button>
+        </form>
+        
         <button autofocus class="closeDialog">Close</button>
     </dialog>
     <footer>
